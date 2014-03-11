@@ -12,7 +12,7 @@ import com.avaje.ebean.Ebean;
 public class ModelsTest extends WithApplication {
   @Before
   public void setUp() {
-      start(fakeApplication(inMemoryDatabase()));
+    start(fakeApplication(inMemoryDatabase(), fakeGlobal()));
   }
 
   @Test
